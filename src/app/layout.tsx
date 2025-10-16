@@ -26,6 +26,15 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen flex`}>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="fixed top-0 left-0 w-full h-full object-cover -z-10"
+        >
+          <source src="/backgif.mp4" type="video/mp4" />
+        </video>
         <NavBar />
         {children}
       </body>
