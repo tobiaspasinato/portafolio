@@ -13,7 +13,7 @@ export default function Home() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <motion.h1 
-          className="text-4xl"
+          className="text-4xl p-5"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
@@ -22,7 +22,7 @@ export default function Home() {
         </motion.h1>
         
         <motion.h3 
-          className="text-4xl font-bold"
+          className="text-3xl font-bold p-5"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
@@ -31,7 +31,7 @@ export default function Home() {
         </motion.h3>
         
         <motion.div 
-          className="flex p-4 gap-4 items-center justify-center"
+          className="flex p-5 gap-4 items-center justify-center"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
@@ -44,7 +44,7 @@ export default function Home() {
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <Linkedin className='size-15'/>
+            <Linkedin className='size-15 p-2'/>
           </motion.a>
           
           <motion.a 
@@ -55,7 +55,7 @@ export default function Home() {
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <Instagram className='size-15'/>
+            <Instagram className='size-15 p-2'/>
           </motion.a>
           
           <motion.a 
@@ -66,7 +66,7 @@ export default function Home() {
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <Github className='size-15'/>
+            <Github className='size-15 p-2'/>
           </motion.a>
         </motion.div>
       </motion.div>
