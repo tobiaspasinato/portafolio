@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { InfoIcon, LibraryBig } from 'lucide-react'
 
 function NavBar() {
@@ -10,7 +11,7 @@ function NavBar() {
           <li className='flex items-center pl-2'>
             <Image src='/image.png' alt='Icon' width={50} height={50} className='rounded-full'/>
             <div className='flex flex-col items-center justify-center text-lg'>
-              <a href='/' className='pl-2 pr-2'>Tobias Pasinato</a>
+              <Link href='/' className='pl-2 pr-2'>Tobias Pasinato</Link>
               <span className='text-sm'>Full Stack Developer</span>
             </div>
           </li>
