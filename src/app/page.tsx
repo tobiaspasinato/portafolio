@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="flex h-screen w-[88%] flex-col items-center justify-center text-center p-70 ">
       <motion.div 
-        className='bg-black/40 backdrop-blur-xl rounded-xl m-20 w-full items-center p-10'
+        className='bg-black/60 backdrop-blur-xl rounded-xl m-20 w-full items-center p-10'
         initial={{ opacity: 0, scale: 0.8, y: 50 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -21,8 +21,8 @@ export default function Home() {
           Hello, I'm Tobias Pasinato
         </motion.h1>
         
-        <motion.h3 
-          className="text-3xl font-bold p-5"
+        <motion.h3  
+          className="text-3xl font-bold p-5 text-[#AB568F]"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
@@ -44,7 +44,7 @@ export default function Home() {
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <Linkedin className='size-15 p-2'/>
+            <Linkedin className='size-15 p-2 text-[#AB568F]'/>
           </motion.a>
           
           <motion.a 
@@ -66,7 +66,7 @@ export default function Home() {
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <Github className='size-15 p-2'/>
+            <Github className='size-15 p-2 text-[#AB568F]'/>
           </motion.a>
         </motion.div>
       </motion.div>

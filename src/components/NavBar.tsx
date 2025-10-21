@@ -5,7 +5,7 @@ import { InfoIcon, LibraryBig } from 'lucide-react'
 function NavBar() {
   return (
     <nav className='flex items-center justify-between h-full'>
-      <div className='bg-black/40 backdrop-blur-xl h-[50%] rounded-r-xl'>
+      <div className='bg-[#161616] backdrop-blur-xl h-[50%] rounded-r-xl'>
         <ul className='flex flex-col h-full justify-around px-1 items-center'>
           <li className='flex items-center pl-2'>
             <Image src='/image.png' alt='Icon' width={50} height={50} className='rounded-full'/>
