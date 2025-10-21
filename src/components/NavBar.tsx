@@ -17,11 +17,11 @@ function NavBar() {
           </li>
           <li className='flex items-center hover:underline underline-offset-8 decoration-2 decoration-slate-400'>
             <LibraryBig className='inline-block mr-1'/>
-            <a href='projects' className='block py-2 px-1 text-xl'>Projects</a>
+            <Link href='projects' className='block py-2 px-1 text-xl'>Projects</Link>
           </li>
           <li className='flex items-center hover:underline underline-offset-8 decoration-2 decoration-slate-400'>
             <InfoIcon className='inline-block mr-1'/>
-            <a href='aboutme' className='block py-2 px-1 text-xl'>About Me</a>
+            <Link href='aboutme' className='block py-2 px-1 text-xl'>About Me</Link>
           </li>
         </ul>
       </div>
