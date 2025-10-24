@@ -30,7 +30,7 @@ export default function About() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <motion.h2 
-            className='font-bold text-4xl text-start p-5'
+            className='font-bold text-4xl text-start p-5 text-[#AB568F]'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}

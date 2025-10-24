@@ -1,5 +1,4 @@
 "use client";
-
 import { Instagram, Linkedin, Github } from 'lucide-react';
 import { motion } from 'framer-motion';
 
