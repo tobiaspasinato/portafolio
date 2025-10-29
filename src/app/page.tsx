@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
-    <main className="flex h-screen w-[88%] flex-col items-center justify-center text-center p-70 ">
+    <main className="flex h-screen w-[88%] flex-col items-center justify-center text-center p-70">
       <motion.div 
         className='bg-black/60 backdrop-blur-xl rounded-xl m-20 w-full items-center p-10'
         initial={{ opacity: 0, scale: 0.8, y: 50 }}

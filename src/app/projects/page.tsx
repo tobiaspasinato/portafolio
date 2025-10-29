@@ -4,7 +4,6 @@ import { projectData } from "@/data";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-
 export default function Projects() {
   const [ cantidad ] = useState(8);
   const [position, setPosition] = useState(0);
@@ -49,7 +48,7 @@ export default function Projects() {
             }}
             transition={{ duration: 0.4 }}
           >
-            <Card title={project.title} description={project.description} url={project.url} />
+            <Card title={project.title} description={project.description} images={project.images} url={project.url} />
           </motion.div>
         ))}
       </motion.div>
