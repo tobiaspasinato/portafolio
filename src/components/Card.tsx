@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import Slider from "./Slider";
 
 export default function Card({ title, description, images, url }: { title: string; description: string; images: Array<string>; url: string }) {
@@ -22,7 +23,7 @@ export default function Card({ title, description, images, url }: { title: strin
                     </div>
                 </div>
                 <div className="p-7 pt-0">
-                    <img className="w-full h-48 object-cover rounded-2xl" src={images[0]} alt="Imagen de ejemplo"/>
+                    <Image className="w-full h-48 object-cover rounded-2xl" src={images[0]} alt="Imagen de ejemplo" width={400} height={192} />
                 </div>
             </div>
             <AnimatePresence>

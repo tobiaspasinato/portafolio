@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 import 'swiper/css'
@@ -35,10 +36,12 @@ function Slider({ images, url }: { images: string[], url: string }) {
             <a href={url} target="_blank" rel="noopener noreferrer" className="absolute top-4 right-4 z-10 text-black bg-white w-7 h-7 rounded-full hover:bg-gray-200 transition-colors flex items-center justify-center shadow-lg">🡕</a>
                 {images.map((image, index) => (
                     <SwiperSlide key={index}>
-                        <img 
+                        <Image 
                             src={image} 
                             alt={`Slide ${index + 1}`} 
-                            className="object-cover w-full h-full rounded-2xl" 
+                            className="object-cover w-full h-full rounded-2xl"
+                            fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
                         />
                     </SwiperSlide>
                 ))}
