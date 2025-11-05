@@ -3,8 +3,10 @@ import Card from "@/components/Card";
 import { projectData } from "@/data";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function Projects() {
+  const { t } = useTranslation();
   const [ cantidad ] = useState(8);
   const [position, setPosition] = useState(0);
 
@@ -22,7 +24,7 @@ export default function Projects() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        Projects
+        {t('projects.title')}
       </motion.h1>
       <motion.div 
         key={position}
@@ -58,7 +60,7 @@ export default function Projects() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6, duration: 0.5 }}
       >
-        { Array.from({length : projectData.projectsLength / cantidad}).map((_, index) => (
+        { Array.from({length : Math.ceil(projectData.projectsLength / cantidad)}).map((_, index) => (
           <motion.button 
             key={index} 
             onClick={() => handleClick(index)} 

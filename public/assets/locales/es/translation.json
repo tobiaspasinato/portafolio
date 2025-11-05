@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "name": "Tobias Pasinato",
+    "role": "Desarrollador Full Stack",
+    "projects": "Proyectos",
+    "aboutMe": "Sobre Mí"
+  },
+  "home": {
+    "greeting": "Hola, soy Tobias Pasinato",
+    "role": "Desarrollador Full Stack"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "subtitle": "Soy Tobias Pasinato",
+    "student": "Estudiante en la Facultad Tecnológica Nacional de Argentina",
+    "nationality": "Nacionalidad: Argentina",
+    "languages": "Idiomas: Español (nativo) - Inglés (intermedio)",
+    "downloadCV": "Descargar CV"
+  },
+  "projects": {
+    "title": "Proyectos"
+  }
+}

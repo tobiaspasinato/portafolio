@@ -2,8 +2,11 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 export default function About() {
+  const { t } = useTranslation();
+
   return (
     <div className="flex h-[100%] w-[88%] flex-col items-start justify-start p-20 ">
       <motion.h1 
@@ -12,7 +15,7 @@ export default function About() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        About me
+        {t('about.title')}
       </motion.h1>
       <div className='flex flex-fill justify-center items-center h-[400px]'>
         <motion.div
@@ -35,7 +38,7 @@ export default function About() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            I am Tobias Pasinato
+            {t('about.subtitle')}
           </motion.h2>
           <motion.p 
             className='text-lg text-start p-5'
@@ -43,7 +46,7 @@ export default function About() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
           >
-            Student at the National Technological Faculty of Argentina
+            {t('about.student')}
           </motion.p>
           <motion.p 
             className='text-lg text-start p-5'
@@ -51,7 +54,7 @@ export default function About() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
           >
-            Nationality: Argentina
+            {t('about.nationality')}
           </motion.p>
           <motion.p 
             className='text-lg text-start p-5'
@@ -59,7 +62,7 @@ export default function About() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            Languages: Spanish (native) - English (intermediate)
+            {t('about.languages')}
           </motion.p>
           <motion.a 
             href='/CVTobiasPasinato.pdf'
@@ -71,7 +74,7 @@ export default function About() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Download CV
+            {t('about.downloadCV')}
           </motion.a>
         </motion.div>
       </div>

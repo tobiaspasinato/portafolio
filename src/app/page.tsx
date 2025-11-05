@@ -1,10 +1,15 @@
 "use client";
 import { Instagram, Linkedin, Github } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+
+// xl: para pc y sm: para moviles
 
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
-    <main className="flex h-screen w-[88%] flex-col items-center justify-center text-center p-70">
+    <main className="xl:flex xl:h-screen xl:w-[88%] xl:flex-col xl:items-center xl:justify-center xl:text-center xl:p-70">
       <motion.div 
         className='bg-black/60 backdrop-blur-xl rounded-xl m-20 w-full items-center p-10'
         initial={{ opacity: 0, scale: 0.8, y: 50 }}
@@ -17,7 +22,7 @@ export default function Home() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          Hello, I&apos;m Tobias Pasinato
+          {t('home.greeting')}
         </motion.h1>
         
         <motion.h3  

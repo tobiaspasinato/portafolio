@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "name": "Tobias Pasinato",
+    "role": "Full Stack Developer",
+    "projects": "Projects",
+    "aboutMe": "About Me"
+  },
+  "home": {
+    "greeting": "Hello, I'm Tobias Pasinato",
+    "role": "Full Stack Developer"
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "I am Tobias Pasinato",
+    "student": "Student at the National Technological Faculty of Argentina",
+    "nationality": "Nationality: Argentina",
+    "languages": "Languages: Spanish (native) - English (intermediate)",
+    "downloadCV": "Download CV"
+  },
+  "projects": {
+    "title": "Projects"
+  }
+}
