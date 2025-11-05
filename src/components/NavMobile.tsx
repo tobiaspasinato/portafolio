@@ -2,7 +2,7 @@ import React from 'react'
 
 function NavMobile() {
   return (
-    <div>NavMobile</div>
+    <div><div>NavMobile</div></div>
   )
 }
 
